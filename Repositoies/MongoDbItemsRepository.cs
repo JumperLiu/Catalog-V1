@@ -77,7 +77,23 @@
                 );
  * 3)、在项目启动类Startup.cs文件内Configure方法中新增应用健康检查端点路由属性：
  *      endpoints.MapHealthChecks("/health/ready", new HealthCheckOptions { Predicate = (check) => check.Tags.Contains("ready") });
-        endpoints.MapHealthChecks("/health/live", new HealthCheckOptions { Predicate = (_) => false });
+ *      endpoints.MapHealthChecks("/health/live", new HealthCheckOptions { Predicate = (_) => false });
+ * ---------------------------------------------------------------------------------
+ * vscode 下 使用 git 进行版本控制操作
+ * git config --global user.email "github注册电子邮件(cynosure0313@live.cn)"
+ * vscode git 版本控制仓库全局配置 登录用户电子邮件地址
+ * git config --global user.name "github注册用户名称(JumperLiu)"
+ * vscode git 版本控制仓库全局配置 登录用户名称
+ * 登录 github https://github.com 创建新项目仓库(此处项目仓库名为：Catalog-V1)
+ * 项目目录下开启终端输入下列命令以执行版本提交：
+ * echo "# Catalog-V1" >> README.md
+ * git init
+ * git add README.md
+ * git commit -m "first commit"
+ * git branch -M main
+ * git remote add origin https://github.com/JumperLiu/Catalog-V1.git
+ * git branch -M main
+ * git push -u origin main
  */
 using System;
 using System.Collections.Generic;
