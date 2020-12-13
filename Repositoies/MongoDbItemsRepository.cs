@@ -79,7 +79,7 @@
  *      endpoints.MapHealthChecks("/health/ready", new HealthCheckOptions { Predicate = (check) => check.Tags.Contains("ready") });
  *      endpoints.MapHealthChecks("/health/live", new HealthCheckOptions { Predicate = (_) => false });
  * ---------------------------------------------------------------------------------
- * vscode 下 使用 git 进行版本控制操作
+ * vscode 下 使用 git hub 进行版本控制操作
  * git config --global user.email "github注册电子邮件(cynosure0313@live.cn)"
  * vscode git 版本控制仓库全局配置 登录用户电子邮件地址
  * git config --global user.name "github注册用户名称(JumperLiu)"
